@@ -11,6 +11,8 @@ export default function Navbar() {
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/ref">ref</Link>
+          <Link href="/ReducerForm">ReducerForm</Link>
+          <Link href="/Memochangecolor">Memochangecolor</Link>
         </div>
       </div>
     </nav>
