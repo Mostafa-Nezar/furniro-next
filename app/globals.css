@@ -2,20 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* globals.css */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* إضافة الخطوط المخصصة */
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
   }
-}
+  
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+  }
+  
+  /* تطبيق الخط على جميع العناصر */
+  body {
+    font-family: 'Poppins-Regular', sans-serif;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .poppins-bold{
+    font-family: 'poppins-bold';
+  }
+  .poppins{
+    font-family: 'poppins-Regular';
+  }
+  :root {
+    --peach: #F6D8C6;
+    --gold: #B88E2F;
+    --dark-gray: #3A3A3A;
+    --light-peach: #FFF3E3;
+    --teal: #2EC1AC;
+    --soft-red: #E97171;
+    --off-white: #F4F5F7;
+    --medium-gray: #898989a8;
+    --beige: #F9F1E7;
+    --cream: #FCF9F4;
+    --silver-gray: #9F9F9F;
+  }
+  
+  /* Background Colors */
+  .bg-peach { background-color: var(--peach); }
+  .bg-gold { background-color: var(--gold); }
+  .bg-dark-gray { background-color: var(--dark-gray); }
+  .bg-light-peach { background-color: var(--light-peach); }
+  .bg-teal { background-color: var(--teal); }
+  .bg-soft-red { background-color: var(--soft-red); }
+  .bg-off-white { background-color: var(--off-white); }
+  .bg-medium-gray { background-color: var(--medium-gray); }
+  .bg-beige { background-color: var(--beige); }
+  .bg-cream { background-color: var(--cream); }
+  .bg-silver-gray { background-color: var(--silver-gray); }
+  
+  /* Text Colors */
+  .text-peach { color: var(--peach); }
+  .text-gold { color: var(--gold); }
+  .text-dark-gray { color: var(--dark-gray); }
+  .text-light-peach { color: var(--light-peach); }
+  .text-teal { color: var(--teal); }
+  .text-soft-red { color: var(--soft-red); }
+  .text-off-white { color: var(--off-white); }
+  .text-medium-gray { color: var(--medium-gray); }
+  .text-beige { color: var(--beige); }
+  .text-cream { color: var(--cream); }
+  .text-silver-gray { color: var(--silver-gray); }
+  

@@ -1,5 +1,6 @@
 import "./globals.css";
-import Navbar from "./comps/Navbar";
+import Navbar from "../app/Navbar/page";
+import Myfooter from "./footer/page";
 
 export const metadata = {
   title: "hello",
@@ -13,9 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      
       <body>
         <Navbar />
         <main>{children}</main>
+        <Myfooter />
       </body>
     </html>
   );

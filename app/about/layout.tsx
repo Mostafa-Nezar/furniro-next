@@ -2,11 +2,14 @@ export const metadata = {
   title: "about",
 };
 
-export default function Layout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div>
-      <h2>about</h2>
-      {children}
-    </div>
+
+        <main>{children}</main>
+
   );
 }
